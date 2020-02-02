@@ -2,7 +2,7 @@
 
 浏览器插件 UI.Vision Kantu，我们就叫它看图（Kantu）吧，是一款 RPA（【介绍】）工具。支持 Chrome 和 Firefox 浏览器，正是因为它是一款浏览器插件所以它可以实现全平台（Mac、Windows、Linux）的自动化操作。
 
-【图片：Mac、Windows、Linux 横排图标】
+![image]https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/Mac-Windows-Linux.png
 
 
 Chrome 插件下载地址：[UI.Vision RPA 浏览器自动化工具](https://chrome.google.com/webstore/detail/uivision-rpa/gcbalfbdmfieckjlnblleoemohcganoc?hl=zh-CN)
