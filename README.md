@@ -43,6 +43,7 @@ UI.Vision RPA 的 Selenium IDE 用于网页的自动化。使用方法就是“�
 ## 三、特种兵（视觉命令）
 
 [XClick (target, click type), XMove (target, mouse event) 英文文档](https://ui.vision/rpa/docs/xclick#vision)
+
 [XType ("text") 英文文档](https://ui.vision/rpa/docs/xtype)
 
 ### 使用介绍
