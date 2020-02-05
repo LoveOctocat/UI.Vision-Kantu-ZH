@@ -9,13 +9,15 @@ Chrome 插件下载地址：[UI.Vision RPA 浏览器自动化工具](https://chr
 
 官方文档：[UI Automation Open-Source Selenium IDE plus additional features, iMacros alternative](https://ui.vision/rpa/docs)
 
----
+![汇总](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E6%B1%87%E6%80%BB.png)
 
 ## 一、兵（Selenium IDE）
 
 [UI.Vision Kantu Selenium IDE Commands 英文文档](https://ui.vision/rpa/docs/selenium-ide)
 
 ### 使用介绍
+
+![兵](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E5%85%B5.png)
 
 UI.Vision RPA 的 Selenium IDE 用于网页的自动化。使用方法就是“兵来将挡，水来土掩”，遇到按钮元素，我们就调用 `Click` 命令；遇到输入框，我们就调用 `Type` 命令；遇到下拉选项，我们就调用 `Select` 命令。根据具体的网页情况，调取不同的命令即可。
 
@@ -29,6 +31,8 @@ UI.Vision RPA 的 Selenium IDE 用于网页的自动化。使用方法就是“�
 [executeScript (JS code, variable) - Selenium IDE command 英文文档](https://www.notion.so/UI-Vision-Kantu-0e620902c985476696258243f1567a48#80f0f633b7d1459c908e61f909d9df6e)
 
 ### 使用介绍
+
+![军师](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E5%86%9B%E5%B8%88.png)
 
 军师就是 `executeScript` 和 `executeScript_Sandbox` 这两个命令，后者为前者的升级版本。其实也是 Selenium IDE 中的命令（我特意从中拿了出来说明）一般情况下使用后者这个命令。
 
@@ -48,6 +52,8 @@ UI.Vision RPA 的 Selenium IDE 用于网页的自动化。使用方法就是“�
 
 ### 使用介绍
 
+![特种兵](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E7%89%B9%E7%A7%8D%E5%85%B5.png)
+
 「特种兵」模拟真实用户输入、点击等操作。主要用于桌面自动化，以及复杂网页自动化。是基于图像的自动化，模拟的是真人操作。
 
 主要有 XClick、XType、XMove 命令。
@@ -59,6 +65,10 @@ UI.Vision RPA 的 Selenium IDE 用于网页的自动化。使用方法就是“�
 
 ### 使用介绍
 
+![阵法](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E9%98%B5%E6%B3%95.png)
+
+### 使用介绍
+
 一般情况下，Macro 执行的顺序是从上到下的。而「阵法」命令可以调整执行的顺序，加上判断条件，比如出现 A 我就点击「按钮 1」，要是 B 我就点击「按钮 2」
 
   
@@ -67,6 +77,8 @@ UI.Vision RPA 的 Selenium IDE 用于网页的自动化。使用方法就是“�
 [Internal variables 内部变量英文文档](https://ui.vision/rpa/docs)
 
 ### 使用介绍
+
+![下旨](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E4%B8%8B%E6%97%A8.png)
 
 「圣旨」就是传递信息，分为「内部变量」、「全局变量」以及「普通变量」。
 
