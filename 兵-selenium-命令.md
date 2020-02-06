@@ -74,7 +74,7 @@ assertAlert、assertConfirmation、assertPrompt 用于检查各种 Javascript �
 | verifyChecked | id=firsttimeuser   | is18         |
 | assertChecked | id=over18          | is18         |
 
-这些命令有时也用空格拼写:assert Checked、assert Not Checked、verify Checked和verify Not Checked。
+这些命令有时也用空格拼写：assert Checked、assert Not Checked、verify Checked 和 verify Not Checked。
 
 ## 命令：assertEditable (locator), assertNOTEditable (text)
 
@@ -88,10 +88,6 @@ assertAlert、assertConfirmation、assertPrompt 用于检查各种 Javascript �
 
 - `verify` 命令如果没有匹配到相应条件的话，它只会在日志中返回错误信息，但是 Macro 依旧继续运行。
 - `assert` 命令，如果没有匹配到相应条件的话，它将使 Macro 停止运行。
-
-### 例子
-
-Available soon
 
 ## 命令：assertElementPresent (target, pattern) , verifyElementPresent (locator, text)
 
@@ -145,8 +141,8 @@ UI.Vision RPA Selenium IDE 还支持 `sourceSearch` 命令（不是官方的 Sel
 | Command        | Target                                  | Pattern/Text            |
 | :------------- | :-------------------------------------- | :---------------------- |
 | open           | https://ui.vision/                      |                         |
-| ==assertText== | ==//*[@id="title"]==                    | ==Welcome==             |
-| ==verifyText== | ==//*[@id="content"]/div[2]/div/h2[1]== | ==Free Web Automation== |
+| assertText     | //*[@id="title"]                        |   Welcome               |
+| verifyText     | //*[@id="content"]/div[2]/div/h2[1]     | Free Web Automation     |
 
 ### 在 Selenium 中 verifyTextPresent 和 verifyText 的区别？
 
@@ -178,7 +174,7 @@ BringBrowserToForeground 可以将浏览器于最顶端激活。用户便是很�
 
 | Command                      | Target             | Pattern/Text |
 | :--------------------------- | :----------------- | :----------- |
-| ==BringBrowserToForeground== | -                  | -            |
+| BringBrowserToForeground     |                    |              |
 | open                         | https://ui.vision/ |              |
 
 ## 命令：captureScreenshot (name of screenshot)
@@ -198,7 +194,7 @@ BringBrowserToForeground 可以将浏览器于最顶端激活。用户便是很�
 | Command                         | Target             | Pattern/Text |
 | :------------------------------ | :----------------- | :----------- |
 | open                            | https://ui.vision/ |              |
-| captureEntirePageScreenshot | my screenshot name |           |
+| captureEntirePageScreenshot     | my screenshot name |              |
 
 ## 命令：Check (locator), UnCheck (locator)
 
@@ -275,8 +271,8 @@ clickAndWait 和 click 发送一个 Javascript 点击事件给 DOM 元素。区�
 | Command      | Target                   | Pattern/Text |
 | :----------- | :----------------------- | :----------- |
 | open         | https://ui.vision/       |              |
-| click        | link=Free Web Automation | -            |
-| clickAndWait | link=Go To Next Page     | -            |
+| click        | link=Free Web Automation |              |
+| clickAndWait | link=Go To Next Page     |              |
 
 
 ## 命令：clickAt(locator, coordString)
@@ -400,31 +396,10 @@ dragAndDropToObject 命令在 https://html5demos.com/drag/ 网站中运行良好
 
 [该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/echo)
 
-echo 命令用于在任何 Selenium IDE 软件测试工具的日志区域中显示文本或显示变量的存储值。它通常用于调试，且不会以任何方式影响 Macro 的执行。
+echo 命令用于日志区域中显示文本或显示变量的存储值。不会影响到 Macro 的执行。
 
-### Make automation more colorful
-
-| **Color Name** |
-| -------------- |
-| white          |
-| gray           |
-| silver         |
-| black          |
-| maroon         |
-| red            |
-| purple         |
-| fuchsia        |
-| green          |
-| lime           |
-| olive          |
-| yellow         |
-| navy           |
-| blue           |
-| teal           |
-| aqua           |
-| orange         |
-
-使用  \#shownotification 作为 color 数值，可以开启「通知消息」。
+- **可以使用的颜色值：** white、gray、silver、black、maroon、red、purple、fuchsia、green、lime、olive、yellow、navy、blue、teal、aqua、orange
+- 使用  `#shownotification` 作为 color 数值，可以开启「通知消息」
 
 ### 例子
 
@@ -432,8 +407,8 @@ echo 命令用于在任何 Selenium IDE 软件测试工具的日志区域中显�
 | :------- | :---------------------------------- | :---------------- |
 | open     | https://ui.vision/                  |                   |
 | store    | Boston                              | city              |
-| echo   | The city variable contains ${city}. | green             |
-| echo   | macro done!                         | #shownotification |
+| echo     | The city variable contains ${city}. | green             |
+| echo     | macro done!                         | #shownotification |
 
 ## 命令：editContent (target, text in HTML format)
 
@@ -465,7 +440,7 @@ echo 命令用于在任何 Selenium IDE 软件测试工具的日志区域中显�
 | Command   | Target                   | Pattern/Text |
 | :-------- | :----------------------- | :----------- |
 | open      | https://ui.vision/       |              |
-| mouseOver | link=Free Web Automation | -            |
+| mouseOver | link=Free Web Automation |              |
 
 ## 命令：Open (URL)
 
@@ -486,7 +461,7 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 | Command | Target                              | Pattern/Text |
 | :------ | :---------------------------------- | :----------- |
 | open    | https://ui.vision/docs/selenium-ide |              |
-| echo    | This was all...                     | -            |
+| echo    | This was all...                     |              |
 
 ## 命令：pause (time in milliseconds)
 
@@ -555,8 +530,6 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 
 `select` 和 `selectAndWait` 的目的是从下拉 / 组合框或列表框中选择一个值。
 
-![image-20200116125446616](/Users/awake/Library/Application%20Support/typora-user-images/image-20200116125446616.png)
-
 如果从下拉菜单中选择标签时页面正在重新加载，则需要使用 `selectAndWait` 命令。 它将选择指定的标签，然后等待页面成功加载。
 
 ### 例子
@@ -623,9 +596,9 @@ SelectFrame values:
 | :--------------- | :------------------------------- | :------------------------------------ |
 | open             | https://ui.vision/               |                                       |
 | click            | link=Open one new browser window |                                       |
-| ==selectWindow== | tab=1                            |                                       |
+|   selectWindow   | tab=1                            |                                       |
 | click            | link=One more tab                |                                       |
-| ==selectWindow== | tab=2                            |                                       |
+| selectWindow     | tab=2                            |                                       |
 | verifyText       | link=Free Web Automation         | Free Web Automation                   |
 | selectWindow     | tab=0                            | (this switches back to the first tab) |
 | selectWindow     | tab=open                         | https://ocr.space                     |
@@ -643,16 +616,16 @@ SelectFrame values:
 
 `Sendkey` 支持的特殊按键，就像这样使用：`${KEY_ENTER}`
 
-- KEY_LEFT (Navigation Left)
-- KEY_UP (Navigation Up)
-- KEY_RIGHT (Navigation Right)
-- KEY_DOWN (Navigation Down)
-- KEY_PGUP / KEY_PAGE_UP (Page up)
-- KEY_PGDN / KEY_PAGE_DOWN (Page down)
-- KEY_BKSP / KEY_BACKSPACE (Backspace)
-- KEY_DEL / KEY_DELETE (Delete)
-- KEY_ENTER (Enter)
-- KEY_TAB (Tab)
+- KEY_LEFT (左方向键)
+- KEY_UP (上方向键)
+- KEY_RIGHT (右方向键)
+- KEY_DOWN (下方向键)
+- KEY_PGUP / KEY_PAGE_UP (Page up 按键)
+- KEY_PGDN / KEY_PAGE_DOWN (Page down 按键)
+- KEY_BKSP / KEY_BACKSPACE (空格)
+- KEY_DEL / KEY_DELETE (删除按键)
+- KEY_ENTER (回车键)
+- KEY_TAB (Tab 键)
 
 sendKeys 和 type 命令只可以在网页中运行，桌面自动化必须使用 `XType`。
 
@@ -666,7 +639,7 @@ sendKeys 和 type 命令只可以在网页中运行，桌面自动化必须使�
 | Type     | id=lst-ib                | Solar Cells Web Automation |
 | sendkeys | link=Free Web Automation | ${KEY_ENTER}               |
 
-## 命令：Search and extract page source code
+## 命令：sourceSearch & sourceExtract
 
 [该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/sourceextract-sourcesearch)
 
