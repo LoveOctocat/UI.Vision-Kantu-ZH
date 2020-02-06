@@ -2,9 +2,9 @@
 
 ![兵部](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E5%85%B5.png)
 
-## answerOnNextPrompt (text)
+## 命令：answerOnNextPrompt (text)
 
-[answerOnNextPrompt UI.Vision RPA 原网页]:https://ui.vision/rpa/docs/selenium-ide/answeronnextprompt
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/answeronnextprompt)
 
 该命令用于告诉「提示框」答案，而后确认。
 
@@ -17,9 +17,9 @@
 | click              | //*[@id="content"]/div[2]/div/p[2]/button[2] |              |
 
 
-## assertAlert (text), assertConfirmation (text), assertPrompt (text)
+## 命令：assertAlert (text), assertConfirmation (text), assertPrompt (text)
 
-https://ui.vision/rpa/docs/selenium-ide/assertalert-assertconfirmation-assertprompt
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/assertalert-assertconfirmation-assertprompt)
 
 assertAlert、assertConfirmation、assertPrompt 用于检查各种 Javascript 的对话框文本是否正确。如果你只需要确认（或点击）一个对话框，这并不需要。它们只对创建 web 测试宏有用，当您需要确认对话框中的文本是否正确时。
 
@@ -44,9 +44,10 @@ assertAlert、assertConfirmation、assertPrompt 用于检查各种 Javascript �
 | click              | //*[@id="content"]/div[2]/div/p[2]/button[2] | -            |
 | assertPrompt       | Enter some text!                             | -            |
 
-## assertChecked (target), verifyChecked (target)
 
-https://ui.vision/rpa/docs/selenium-ide/assertchecked-verifychecked
+## 命令：assertChecked (target), verifyChecked (target)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/assertchecked-verifychecked)
 
 `assertChecked` 和 `verifyChecked` 命令用于检查「复选框」和「单项框」的情况。如果「复选框」被选中，命令会成功运行，否则在日志中返回错误：`[error] false`。
 
@@ -75,9 +76,9 @@ https://ui.vision/rpa/docs/selenium-ide/assertchecked-verifychecked
 
 这些命令有时也用空格拼写:assert Checked、assert Not Checked、verify Checked和verify Not Checked。
 
-## assertEditable (locator), assertNOTEditable (text)
+## 命令：assertEditable (locator), assertNOTEditable (text)
 
-https://ui.vision/rpa/docs/selenium-ide/asserteditable
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/asserteditable)
 
 `assertEditable` 用于确认目标元素是可编辑的。如果不可编辑，Macro 则停止运行。
 
@@ -92,9 +93,9 @@ https://ui.vision/rpa/docs/selenium-ide/asserteditable
 
 Available soon
 
-## assertElementPresent (target, pattern) , verifyElementPresent (locator, text)
+## 命令：assertElementPresent (target, pattern) , verifyElementPresent (locator, text)
 
-https://ui.vision/rpa/docs/selenium-ide/assertelementpresent-verifyelementpresent
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/assertelementpresent-verifyelementpresent)
 
 `assertElementPresent` 和 `verifyElementPresent` 用于检查定位器的元素是否存在。
 
@@ -124,9 +125,9 @@ assertElementPresent 在技术上类似于单击命令（click 命令），不�
 | echo                     | Lettuce image found!                                  | green         |
 
 
-## assertText (target, pattern) , verifyText (locator, text)
+## 命令：assertText (target, pattern) , verifyText (locator, text)
 
-https://ui.vision/rpa/docs/selenium-ide/asserttext-verifytext
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/asserttext-verifytext)
 
 `assertText` 和 `verifyText` 用于获取元素的文本（由定位符定义），并检查其是否满足 Pattern/Text 中的要求。这适用于任何包含文本的元素。
 
@@ -153,7 +154,9 @@ verifyTextPresent 命令不用于存储任何目标元素的值，但是可以�
 
 在storeTextPresent页面上，您可以找到一个使用storeText“模拟”verifyTextPresent的示例，然后检查提取的文本是否正确。如果没有，则抛出一个错误。verifyTextPresent的模拟实际上比原始的更好:旧的verifyTextPresent检查整个页面中的文本是否存在。这经常会导致误报，通常不建议这样做。
 
-## assertTitle (text), verifyTitle (text)
+## 命令：assertTitle (text), verifyTitle (text)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/asserttitle-verifytitle)
 
 `assertTitle`  用于获取网页的 Title，并做检查。
 
@@ -165,9 +168,9 @@ verifyTextPresent 命令不用于存储任何目标元素的值，但是可以�
 | open        | https://ui.vision/   |              |
 | assertTitle | I am the page title! |              |
 
-## BringBrowserToForeground
+## 命令：BringBrowserToForeground
 
-https://ui.vision/rpa/docs/selenium-ide/bringbrowsertoforeground
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/bringbrowsertoforeground)
 
 BringBrowserToForeground 可以将浏览器于最顶端激活。用户便是很适合用于从「浏览器书签」中启动 Macro。
 
@@ -178,9 +181,9 @@ BringBrowserToForeground 可以将浏览器于最顶端激活。用户便是很�
 | ==BringBrowserToForeground== | -                  | -            |
 | open                         | https://ui.vision/ |              |
 
-## captureScreenshot (name of screenshot)
+## 命令：captureScreenshot (name of screenshot)
 
-https://ui.vision/rpa/docs/selenium-ide/capturescreenshot
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/capturescreenshot)
 
 `captureEntirePageScreenshot` 用于截屏整个网页。
 
@@ -195,19 +198,19 @@ https://ui.vision/rpa/docs/selenium-ide/capturescreenshot
 | Command                         | Target             | Pattern/Text |
 | :------------------------------ | :----------------- | :----------- |
 | open                            | https://ui.vision/ |              |
-| ==captureEntirePageScreenshot== | my screenshot name | -            |
+| captureEntirePageScreenshot | my screenshot name |           |
 
-## Check (locator), UnCheck (locator)
+## 命令：Check (locator), UnCheck (locator)
 
-https://ui.vision/rpa/docs/selenium-ide/check-uncheck
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/check-uncheck)
 
 `Check` 选中一个切换按钮（复选框/单选）。
 
 `UnCheck` 取消一个切换按钮（复选框/单选）。
 
-## click (target), clickAndWait (target)
+## 命令：click (target), clickAndWait (target)
 
-https://ui.vision/rpa/docs/selenium-ide/click
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/click)
 
 clickAndWait 和 click 发送一个 Javascript 点击事件给 DOM 元素。区别就是 clickAndWait 多一个等待的过程。
 
@@ -276,15 +279,15 @@ clickAndWait 和 click 发送一个 Javascript 点击事件给 DOM 元素。区�
 | clickAndWait | link=Go To Next Page     | -            |
 
 
-## clickAt(locator, coordString)
+## 命令：clickAt(locator, coordString)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/clickat)
 
 `clickAt` 有 locator 和 coordString。由于指定鼠标事件在定位符返回的元素内的 x，y 位置（如 10, 20）
 
 `ClickAt` 在一些复杂的元素中点击更佳方便，如在画布上绘制。
 
 默认情况 UI.Vision RPA 使用的自动录制的是 click，可以去设置中修改为 clickAt。
-
-![image-20200115200211504](/Users/awake/Library/Application%20Support/typora-user-images/image-20200115200211504.png)
 
 ClickAt 对于 Visual UI Testing 非常有用，可以和 elementFromPoint 结合使用，以视觉方式查找并单击 canvas 元素内的特定位置。
 
@@ -295,11 +298,11 @@ ClickAt 对于 Visual UI Testing 非常有用，可以和 elementFromPoint 结�
 | open        | https://ui.vision/ |              |
 |   clickAt   | css=....           | 10,20        |
 
-## csvRead (file name)
+## 命令：csvRead (file name)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/csvread)
 
 csvRead 用于读取 CSV 文件 📃，Macro 每循环一次读取一行 CSV 文件，用内部变量 `!col1`、`!COL2`  来表示。
-
-![image-20200115203831896](/Users/awake/Library/Application%20Support/typora-user-images/image-20200115203831896.png)
 
 > 重要提示：您必须使用 LOOP 按钮启动 Macro。每个循环一次读取一行 CSV。读取的行是基于 `${!LOOP}` 变量的值。比如您运行循环 5（开始）到 10（结束），它将会从 CSV 文件读取第 5 到 10 行。另一个选择是将 CSVRead 命令嵌入带有内部变量 `!csvReadStatus` 和 `!csvReadLineNumber` 的 `while` 循环中，如 DemoCsvReadWithWhile Demo Mcaro 所示。
 
@@ -339,15 +342,13 @@ csvRead 用于读取 CSV 文件 📃，Macro 每循环一次读取一行 CSV 文
 | csvRead | user.csv          |                    |
 | type    | id=firstname      | ${!COL1}           |
 
-## csvSave (file name)
+## 命令：csvSave (file name)
 
-https://ui.vision/rpa/docs/selenium-ide/csvsave
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/csvsave)
 
 `csvSave` 的目的是将 `!csvLine` 的值存储到 CSV 文件中。该文件存储在浏览器本地存储中。您可以在 CSV Tab 上查看、导出和删除它。如果您再次调用 csvSave（或第二次运行 Macro），则数据将附加到 CSV 文件之后。
 
-![image-20200115211745418](/Users/awake/Library/Application%20Support/typora-user-images/image-20200115211745418.png)
-
-请注意，将数据赋值给 `!csvLine` ，是分别存储了每个值。因为一旦调用了 `csvSave`，保存在 `!csvLine` 内部数组中的每个值都将在保存之前自动用 “…” 包装，（见论坛：https://forum.ui.vision/t/why-store-csvline-inserts-double-quotes-no-matter-what/574/4）
+请注意，将数据赋值给 `!csvLine` ，是分别存储了每个值。因为一旦调用了 `csvSave`，保存在 `!csvLine` 内部数组中的每个值都将在保存之前自动用 “…” 包装，（[见论坛](https://forum.ui.vision/t/why-store-csvline-inserts-double-quotes-no-matter-what/574/4)）
 
 重要提示：`csvSave` 和 `csvRead` 在不同的 CSV 文件上运行。 您可以同时在 Mcaro 中使用两者，但是任何与 `!csvLine` 相加的值都只会修改用于 csvSave 文件。 使用 csvRead 加载的数据是只读的，只能通过只读 `${!COLx}` 变量进行访问。 但是您可以轻松地 “re-use” 一些已加载的数据作为输出日志文件，只需使用 `store | ${COl1} | !csvLine` 即可。 在此示例中，我们将输入 CSV 文件中第一列的值添加到 `!csvLine` 变量中。
 
@@ -366,7 +367,7 @@ https://ui.vision/rpa/docs/selenium-ide/csvsave
 | storeText | id=EURO            | !csvLine     |
 | csvSave   | exchangerate.csv   |              |
 
-## deleteAllVisibleCookies (current domain)
+## 命令：deleteAllVisibleCookies (current domain)
 
 `deleteAllCookies` 清除所有 cookies。与 `selectWindows TAB=CLOSEALLOTHER`（关闭所有打开的选项卡）配合使用，是一个在测试开始时很有用的 clean up 命令。
 
@@ -378,9 +379,9 @@ https://ui.vision/rpa/docs/selenium-ide/csvsave
 | :--------------- | :----- | :----------- |
 | deleteAllCookies |        |              |
 
-## dragAndDropToObject (drop from, drop to)
+## 命令：dragAndDropToObject (drop from, drop to)
 
-https://ui.vision/rpa/docs/selenium-ide/draganddroptoobject
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/draganddroptoobject)
 
 dragAndDropToObject：提供「需要拖动对象的元素定位器」和「拖动目标位置的元素定位器」。不要把 dragAndDrop 这个命令搞错了（该命令不支持）。
 
@@ -395,48 +396,48 @@ dragAndDropToObject 命令在 https://html5demos.com/drag/ 网站中运行良好
 | dragAndDropToObject | id=two                       | id=bin       |
 
 
-## echo (text, color)
+## 命令：echo (text, color)
 
-https://ui.vision/rpa/docs/selenium-ide/echo
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/echo)
 
 echo 命令用于在任何 Selenium IDE 软件测试工具的日志区域中显示文本或显示变量的存储值。它通常用于调试，且不会以任何方式影响 Macro 的执行。
 
 ### Make automation more colorful
 
-| **Color Preview** | **Color Name** |
-| ----------------- | -------------- |
-|                   | white          |
-|                   | gray           |
-|                   | silver         |
-|                   | black          |
-|                   | maroon         |
-|                   | red            |
-|                   | purple         |
-|                   | fuchsia        |
-|                   | green          |
-|                   | lime           |
-|                   | olive          |
-|                   | yellow         |
-|                   | navy           |
-|                   | blue           |
-|                   | teal           |
-|                   | aqua           |
-|                   | orange         |
+| **Color Name** |
+| -------------- |
+| white          |
+| gray           |
+| silver         |
+| black          |
+| maroon         |
+| red            |
+| purple         |
+| fuchsia        |
+| green          |
+| lime           |
+| olive          |
+| yellow         |
+| navy           |
+| blue           |
+| teal           |
+| aqua           |
+| orange         |
 
 使用  \#shownotification 作为 color 数值，可以开启「通知消息」。
 
 ### 例子
 
-
-
 | Command  | Target                              | Pattern/Text      |
 | :------- | :---------------------------------- | :---------------- |
 | open     | https://ui.vision/                  |                   |
 | store    | Boston                              | city              |
-|   echo   | The city variable contains ${city}. | green             |
-|   echo   | macro done!                         | #shownotification |
+| echo   | The city variable contains ${city}. | green             |
+| echo   | macro done!                         | #shownotification |
 
-## editContent (target, text in HTML format)
+## 命令：editContent (target, text in HTML format)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/editcontent)
 
 `editContent` 命令支持编辑「可编辑内容的元素」，如「富文本编辑器」。如果用户使用「自动的 recording（录制）」编辑 content-editable 元素的内容，Kantu 将自动生成相应的 editContent 命令（该命令通过检测元素的焦点移除来触发）这个命令的想法是由来自台湾的 Sideex 团队的，Kantu IDE 现在也很好地支持它。
 
@@ -451,7 +452,9 @@ echo 命令用于在任何 Selenium IDE 软件测试工具的日志区域中显�
 | open        | https://quilljs.com/                    |                                                              |
 | editContent | //*[@id="snow-container"]/div[2]/div[1] | &lt;h1&gt;&lt;em&gt;UI.Vision RPA&lt;/em&gt; Test Automation&lt;/h1&gt; |
 
-## mouseOver (target)
+## 命令：mouseOver (target)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/mouseover)
 
 可以使用 `mouseOver` 命令，对目标「页面元素」，鼠标悬停或者滑出进行影像。目标元素可以是按钮、图像、链接或任何其他元素。目标元素可以是按钮（buttom）、图像（image）、链接（link）或其他元素。
 
@@ -464,9 +467,9 @@ echo 命令用于在任何 Selenium IDE 软件测试工具的日志区域中显�
 | open      | https://ui.vision/       |              |
 | mouseOver | link=Free Web Automation | -            |
 
-## Open (URL)
+## 命令：Open (URL)
 
-https://ui.vision/rpa/docs/selenium-ide/open
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/open)
 
 最常用的命令，open 命令用于打开 URL。
 
@@ -485,7 +488,9 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 | open    | https://ui.vision/docs/selenium-ide |              |
 | echo    | This was all...                     | -            |
 
-## pause (time in milliseconds)
+## 命令：pause (time in milliseconds)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/pause)
 
 `pause` 命令是一个等待命令，用于在指定的时间内延迟自动测试的执行。等待时间的单位是「毫秒」，3 秒就是 3000.
 
@@ -502,7 +507,9 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 | pause   | 5000               |              |
 | open    | https://ocr.space/ |              |
 
-## Refresh ()
+## 命令：Refresh ()
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/refresh)
 
 重新加载当前的页面。
 
@@ -512,11 +519,13 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 | Refresh |                   |              |
 
 
-## run (macro name)
+## 命令：run (macro name)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/run)
 
 通过使用 run(Macro)命令，您可以在一个 Macro 中调用另一个宏。 例如：允许您在多个其他 Macro 中重复使用 “登录 Macro” 作为构建块。
 
-#### 主 Macro 和子 Macro 之间的关系
+### 主 Macro 和子 Macro 之间的关系
 
 - 「主 Macro 中的变量」在「子 Macro」中可见（不要将此与「全局变量」混淆了，全局变量是所有 Macro 之间也可见的）
 - 如果在「子 Macro」中更改了变量的值，则它也将更改「主 Macro」中的值（按引用调用)
@@ -540,7 +549,9 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 | echo    | Now we are logged in! |              |
 | run     | /reuse/logout_macro   |              |
 
-## select (target, pattern), selectAndWait (target, pattern)
+## 命令：select (target, pattern), selectAndWait (target, pattern)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/select)
 
 `select` 和 `selectAndWait` 的目的是从下拉 / 组合框或列表框中选择一个值。
 
@@ -555,9 +566,10 @@ UI.Vision RPA Selenium IDE 不支持 `openWindow` 命令 . 您可以使用更加
 | open    | https://ocr.space/    |                         |
 | select  | id=ocrLanguage        | label=ChineseSimplified |
 | click   | id=SearchableAndLayer |                         |
-## selectFrame (frame identifier)
 
-https://ui.vision/rpa/docs/selenium-ide/selectframe
+## 命令：selectFrame (frame identifier)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/selectframe)
 
 当页面包含 iframe 时，您需要使用 `selectFrame` 命令。您需要在 Target 中提供 iframe 元素的名称（name）或 id 属性。同样的命令也适用于 frame，方法完全相同。
 
@@ -580,7 +592,9 @@ SelectFrame values:
 | click       | css=button.ytp-large-play-button.ytp-button |              |
 
 
-## selectWindow (window identifier)
+## 命令：selectWindow (window identifier)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/selectwindow)
 
 `The selectWindow | tab=x and selectWindow | title=y` 命令用于浏览器选项卡切换。 您可以将其与 `title=(title of tab to be selected)` 一起使用，或者使用更方便的 `tab= with number of the tab (比如 0,1,2,...)`。
 
@@ -616,7 +630,9 @@ SelectFrame values:
 | selectWindow     | tab=0                            | (this switches back to the first tab) |
 | selectWindow     | tab=open                         | https://ocr.space                     |
 
-## sendkeys (target, text) and type (target, text)
+## 命令：sendkeys (target, text) and type (target, text)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/sendkeys-type)
 
 `sendkeys` 命令就和 `type` 命令差不多，但是有两个功能 `type` 命令的无法完成。`sendkeys` 命令在自动完成「文本框（text boxes）」或者「组合框（combo boxes）」非常有用。
 
@@ -650,9 +666,9 @@ sendKeys 和 type 命令只可以在网页中运行，桌面自动化必须使�
 | Type     | id=lst-ib                | Solar Cells Web Automation |
 | sendkeys | link=Free Web Automation | ${KEY_ENTER}               |
 
-## Search and extract page source code
+## 命令：Search and extract page source code
 
-https://ui.vision/rpa/docs/selenium-ide/sourceextract-sourcesearch
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/sourceextract-sourcesearch)
 
 `sourceSearch` 和 `sourceExtract` 命令是用于查看页面源代码的，而不是查看文档对象模型（DOM）。 因此 `sourceSearch` / `sourceExtract` 可以用于验证（verify）。
 
@@ -685,9 +701,9 @@ Another test string: width: 11, width: 22, width: 33
 | sourceExtract | regex=width: (\d+)@2                | width: 22                                                    |
 | sourceExtract | regex=width: (\d+)@2,1              | 22 (the 2,1 means the first group of the second match)       |
 
-## store (value, variable)
+## 命令：store (value, variable)
 
-https://ui.vision/rpa/docs/selenium-ide/store
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/store)
 
 Selenium 函数中的 `store`，`storeValue` 和 `storeText` 存储一些数据以供以后访问。
 
@@ -707,9 +723,9 @@ UI.Vision RPA IDE 包含有用的「内部变量」，这些变量控制运行�
 | echo      | ${myvar}           |              |
 | type      | id=phone           | ${myvar}     |
 
-## storeAttribute (locator@attribute, variable)
+## 命令：storeAttribute (locator@attribute, variable)
 
-https://ui.vision/rpa/docs/selenium-ide/storeattribute
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/storeattribute)
 
 > 类似于抓取代码行中的内容
 
@@ -745,9 +761,9 @@ V5.3.3 版本：如果 locator 无法找到，是不会报错。`#LNF` 将会保
 | storeAttribute | css=img.responsive-img@alt                                   | myalttext    |
 | echo           | `The image links to ${mylink} and its ALT text is ${myalttext}` |              |
 
-## storeChecked (target, variable)
+## 命令：storeChecked (target, variable)
 
-https://ui.vision/rpa/docs/selenium-ide/storechecked
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/storechecked)
 
 `storeChecked` 命令将标识复选框或单选按钮的状态，并将值 true 或 false 存储在变量中。如果选中元素，它将在变量中存储  `true`，如果未选中或未选中元素，则将存储  `false`。
 
@@ -761,7 +777,9 @@ https://ui.vision/rpa/docs/selenium-ide/storechecked
 | storeChecked | id=over18                  | is18         |
 | echo         | User is over 18 is ${is18} |              |
 
-## storeText (target, pattern)
+## 命令：storeText (target, pattern)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/storetext)
 
 `storeText` 命令将页面元素的文本值存储到变量中以供将来使用。 因此，它是从 HTML 文本和表格中进行网络抓取信息的推荐命令。
 
@@ -779,7 +797,9 @@ V5.3.3：如果找不到定位器，则不会触发任何错误。 而是将文�
 | storeText | //*[@id="content"]/div[2]/div/h2[1] | name         |
 | echo      | Name var = ${name}                  |              |
 
-## storeTitle (target, pattern)
+## 命令：storeTitle (target, pattern)
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/storetitle)
 
 `storeTitle` 命令用于存储当前网页的 Title 到一个变量中。
 
@@ -793,9 +813,9 @@ Firefox（浏览器）有一个命令是 storeLocation，可以用于保存当�
 | storeTitle |                              | mytitle      |
 | echo       | The page title is ${mytitle} |              |
 
-## storeValue (target, pattern)
+## 命令：storeValue (target, pattern)
 
-https://ui.vision/rpa/docs/selenium-ide/storevalue
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/storevalue)
 
 `storeValue` 命令用于将元素的值赋值给变量。 网站的输入框（input boxes）可以使用 `storeValue` 命令从中获取文本。 换句话说，`storeValue` 可以用于「输入框（input boxes）」、「选择框（select boxes）」或「文本区域（textareas）」信息的抓取。
 
@@ -811,15 +831,15 @@ V5.3.3 版本更新：如果找不到定位器，不会触发错误。 而是将
 | storeValue | id=Readonlytask_Description                    | mytext       |
 | echo       | Extracted Text = ${mytext}                     |              |
 
-## ThrowError
+## 命令：ThrowError
 
 | **Command** | **Target**         | **Comment**                                                  |
 | ----------- | ------------------ | ------------------------------------------------------------ |
 | ThrowError  | Your error message | This command triggers an error. It stops the macro execution and displays "your error message" in the log file. Together with if/endif it allows you to create your own error conditions. |
 
-## WaitForPageToLoad (max. time to wait in milliseconds)
+## 命令：WaitForPageToLoad (max. time to wait in milliseconds)
 
-https://ui.vision/rpa/docs/selenium-ide/waitforpagetoload
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/waitforpagetoload)
 
 `WaitForPageToLoad` 用于告诉 IDE 页面的加载时间，通常不是所有情况都要使用 `...andWait` 命令的。
 
@@ -833,9 +853,9 @@ https://ui.vision/rpa/docs/selenium-ide/waitforpagetoload
 | assertText        | link=Free Web Automation | Free Web Automation |
 | WaitForPageToLoad | 3000                     |                     |
 
-## waitForVisible (locator)
+## 命令：waitForVisible (locator)
 
-https://ui.vision/rpa/docs/selenium-ide/waitforvisible
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/waitforvisible)
 
 `waitForVisible` 用于告诉 IDE 等待元素可见的时间。如果使用了这个命令，它会等待到元素出现。一旦该元素出现了，Macro 会继续运行。
 
@@ -850,6 +870,8 @@ https://ui.vision/rpa/docs/selenium-ide/waitforvisible
 
 
 ### waitForNotVisible 例子（不支持）
+
+[该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/waitforvisible)
 
 等到元素不可见为止，这是很少使用的命令，可以很容易地用现有的命令进行模拟，所以不支持。
 
