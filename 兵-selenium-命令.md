@@ -692,7 +692,7 @@ UI.Vision RPA IDE 包含有用的「内部变量」，这些变量控制运行�
 | Command   | Target             | Pattern/Text |
 | :-------- | :----------------- | :----------- |
 | open      | https://ui.vision/ |              |
-| ==store== | 12345              | myvar        |
+| store     | 12345              | myvar        |
 | echo      | ${myvar}           |              |
 | type      | id=phone           | ${myvar}     |
 
