@@ -35,7 +35,7 @@
 
 UI.Vision 的 Selenium IDE 用于网页的自动化。使用方法就是“兵来将挡，水来土掩”，比如遇到按钮元素，我们就调用 `Click` 命令；遇到输入框，我们就调用 `Type` 命令；遇到下拉选项，我们就调用 `Select` 命令。根据不同的网页情况，调取不同的命令。
 
-**👉 👉 👉 👉 👉 👉 [点击此处查看兵部](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md) 👈 👈 👈 👈 👈 👈**
+**👉 👉 👉 👉 👉 👉 [点击此处查看兵部](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/article/%E5%85%B5%EF%BC%88Selenium%EF%BC%89%E8%AF%A6%E6%83%85.md) 👈 👈 👈 👈 👈 👈**
 
 
 ## 二、军师（运行 Javascript 代码）
@@ -53,7 +53,7 @@ UI.Vision 的 Selenium IDE 用于网页的自动化。使用方法就是“兵�
 
 “军师”命令用于计算、获取信息等进阶操作。比如随机产生 0 到 10 的数据，比如计算 100 - 20 的算式。
 
-**👉 👉 👉 👉 👉 👉 [点击此处查看军师命令](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%86%9B%E5%B8%88.md) 👈 👈 👈 👈 👈 👈**
+**👉 👉 👉 👉 👉 👉 [点击此处查看军师命令](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/article/%E5%86%9B%E5%B8%88%E5%91%BD%E4%BB%A4%E8%AF%A6%E6%83%85.md) 👈 👈 👈 👈 👈 👈**
 
 ## 三、特种兵（视觉命令）
 
