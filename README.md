@@ -53,7 +53,7 @@ UI.Vision 的 Selenium IDE 用于网页的自动化。使用方法就是“兵�
 
 “军师”命令用于计算、获取信息等进阶操作。比如随机产生 0 到 10 的数据，比如计算 100 - 20 的算式。
 
-
+**👉 👉 👉 👉 👉 👉 [点击此处查看军师命令](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%86%9B%E5%B8%88.md) 👈 👈 👈 👈 👈 👈**
 
 ## 三、特种兵（视觉命令）
 
