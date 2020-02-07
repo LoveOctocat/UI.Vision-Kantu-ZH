@@ -69,6 +69,7 @@ UI.Vision 的 Selenium IDE 用于网页的自动化。使用方法就是“兵�
 
 主要有 XClick、XType、XMove 命令。
 
+**👉 👉 👉 👉 👉 👉 [点击此处查看特种兵](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/article/%E7%89%B9%E7%A7%8D%E5%85%B5%E5%91%BD%E4%BB%A4%E8%AF%A6%E6%83%85.md) 👈 👈 👈 👈 👈 👈**
 
 ## 四、阵法（控制流程）
 
@@ -78,10 +79,9 @@ UI.Vision 的 Selenium IDE 用于网页的自动化。使用方法就是“兵�
 
 ![阵法](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E9%98%B5%E6%B3%95.png)
 
-### 使用介绍
-
 一般情况下，Macro 执行的顺序是从上到下的。而「阵法」命令可以调整执行的顺序，加上判断条件，比如出现 A 我就点击「按钮 1」，要是 B 我就点击「按钮 2」
 
+**👉 👉 👉 👉 👉 👉 [点击此处查看阵法](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/article/%E9%98%B5%E6%B3%95%E5%91%BD%E4%BB%A4%E8%AF%A6%E6%83%85.md) 👈 👈 👈 👈 👈 👈**
   
 ## 五、下旨（变量，传递信息）
 
@@ -96,3 +96,5 @@ UI.Vision 的 Selenium IDE 用于网页的自动化。使用方法就是“兵�
 - 「内部变量」可以理解为高祖时期就定下的命令，是带 `!` 的，无法废除，但是解读权在你，比如 `!REPLAYSPEED` 控制的是运行的速度，默认参数是 MEDIUM（中等速度），你可以修改为 FAST（快速）
 - 「全局变量（用得较少）」
 - 「普通变量（有时需要使用）」
+
+**👉 👉 👉 👉 👉 👉 [点击此处查看下旨](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/article/%E4%B8%8B%E6%97%A8%EF%BC%88%E5%8F%98%E9%87%8F%EF%BC%89%E8%AF%A6%E6%83%85.md) 👈 👈 👈 👈 👈 👈**
