@@ -2,6 +2,48 @@
 
 ![兵部](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/pictures/%E5%85%B5.png)
 
+### UI.Vision RPA 与 Selenium IDE 的区别?
+
+当旧版本的 Selenium IDE for Firefox 停止更新了，UI.Vision 团队就启动了 UI.Vision RPA 的开源项目。目的是创建一个全新的、现代 Web 自动化工具。UI.Vision 团队从头实现了所有重要的 Selenium IDE 命令。几个月后，Sel IDE 团队恢复了旧的 Selenium IDE 项目。所以两者之间的代码是不同的。两者都是开源的，但是 license 不同 （[可见 GitHub issues 页面](https://github.com/SeleniumHQ/selenium-ide/issues/19)）。
+
+## 目录
+- [answerOnNextPrompt，告诉弹出的输入文本框](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4answeronnextprompt-text)
+- [assertAlert、assertConfirmation、assertPrompt，检查对话框文本是否正确](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4assertalert-text-assertconfirmation-text-assertprompt-text)
+- [assertChecked、verifyChecked，检查复选框或单选框](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4assertchecked-target-verifychecked-target)
+- [assertEditable、assertNOTEditable，检查目标元素是否可编辑](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4asserteditable-locator-assertnoteditable-text)
+- [assertElementPresent、verifyElementPresent，检查定位器是否存在](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4assertelementpresent-target-pattern--verifyelementpresent-locator-text)
+- [assertText、verifyText，检查元素文本](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4asserttext-target-pattern--verifytext-locator-text)
+- [assertTitle、verifyTitle，检查网页 Title ](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4asserttitle-text-verifytitle-text)
+- [BringBrowserToForeground，将浏览器置于顶端激活](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4bringbrowsertoforeground)
+- [captureScreenshot，截图](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4capturescreenshot-name-of-screenshot)
+- [Check、Uncheck，切换复选框、单选框](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4check-locator-uncheck-locator)
+- [click、clickAndWait，点击](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4click-target-clickandwait-target)
+- [clickAt，点击元素的 x，y 坐标](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4clickatlocator-coordstring)
+- [csvRead，读取 CSV 文件](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4csvread-file-name)
+- [csvSave，保存数据到 CSV 文件](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4csvsave-file-name)
+- [deleteAllVisibleCookies，清除所有 cookies](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4deleteallvisiblecookies-current-domain)
+- [dragAndDropToObject，拖动 A 到 B](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4draganddroptoobject-drop-from-drop-to)
+- [echo，用于日志打印](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4echo-text-color)
+- [editContent，编辑可编辑内容](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4editcontent-target-text-in-html-format)
+- [mouseOver，鼠标悬浮](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4mouseover-target)
+- [open，打开链接](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4open-url)
+- [pause，暂停](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4pause-time-in-milliseconds)
+- [Refresh，刷新页面](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4refresh-)
+- [run，运行其他 Macro](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4run-macro-name)
+- [select、selectAndWait，选择下拉框](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4select-target-pattern-selectandwait-target-pattern)
+- [selectFrame，选择 frame](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4selectframe-frame-identifier)
+- [selectWindow，切换网页浏览器 Tab](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4selectwindow-window-identifier)
+- [sendkeys、type，键入文本或者特殊按键](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4sendkeys-target-text-and-type-target-text)
+- [sourceSearch、sourceExtract，查看网页源代码](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4sourcesearch--sourceextract)
+- [store，保存变量](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4store-value-variable)
+- [storeAttribute，保存元素的属性值](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4storeattribute-locatorattribute-variable)
+- [storeChecked，保存复选框或单项框状态](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4storechecked-target-variable)
+- [storeText，保存页面上可见的文本](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4storetext-target-pattern)
+- [storeTitle，保存网页的 Title](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4storetitle-target-pattern)
+- [storeValue，将元素的值赋值给变量](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4storevalue-target-pattern)
+- [WaitForPageToLoad，等待页面加载](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4waitforpagetoload-max-time-to-wait-in-milliseconds)
+- [waitForVisible，等待元素可见](https://github.com/T-Barry-Lu/UI.Vision-Kantu-ZH/blob/master/%E5%85%B5-selenium-%E5%91%BD%E4%BB%A4.md#%E5%91%BD%E4%BB%A4waitforvisible-locator)
+
 ## 命令：answerOnNextPrompt (text)
 
 [该命令英文链接](https://ui.vision/rpa/docs/selenium-ide/answeronnextprompt)
